@@ -1,0 +1,18 @@
+{
+  "name": "coin_change",
+  "version": "1.0.0",
+  "description": "How many different ways can you make change for an amount, given a list of coins? In this problem, *your code* will need to efficiently compute the answer.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Yepyoung Oh",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
