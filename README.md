@@ -1,27 +1,43 @@
-# The Practice Problem Compendium
+I chose the following practice problems since they are recommaned.
 
-Tired of Googling around for programming interview practice problems? This is a project to build high-quality practice problems suggested for preparing for programming interviews.
+I am sorry for a little delay. I had very busy schedule with many interviews and family businesses(daughter's baptism and family reunion.)
 
-## Suggested Practice Questions
+I tried mocha and chai for testing since you said you are using it. I really like them.
+
+For both of the project, 
+
+to install:
+``` npm install ```
+
+to run it:
+``` npm test```
+
 
 1. [Array Rotation](array_rotate): take a given array and rotate it `n` slots *(10-20 minutes)*
+
+## Questions for further understanding (This is a part of the assesment I guess...)
+
+1. What is the time complexity of your solution? How about space?
+=> O(n) time, and O(n) space.
+
+2. Can you do this in-place?
+=> I can do it in-place algoritm, just shift all element to right, 
+	and the put the very last element to the very front, and repeat n%length times. However, this this is more precisely O(n * length) in time.
+
+*Challenge:* There is an O(n) time / O(1) extra space solution. 
+=>	Honestly, I could not figure out how to do "O(n) time / O(1) extra space"
+	After some searching I realized that we can divide the array into sets that is consist of elements equally distanced, 
+	and move all elements in the same set one by one. first one to the temporary space, next to the previous position, 
+	and so on just like shifting. 
+	The number of set must be GCD of n and length because we don't want some left over element that cannot move anywhere.
+	This is faster than the regular shifting because elements can jump multiple steps instead of one step. 
+	GCD determine how many step an element can jump.
+	However if GCD is 1, then it is same as 1 step shifting and it will be slow.
+
+	These days, time is much more important than the space, so I prefer my first algorithm. Plus it is a lot simpler.
+
+
 2. [Coin Change](coin_change): how many different ways can you make change given an amount and list of coins?
-3. [Tree Zig Zag](tree_zig_zag): alternate between the left-most and right-most nodes in a BST.
 
-## How should you approach these problems?
-
-1. **Code in a realistic fashion**. If you're doing a whiteboard interview, practice with a whiteboard. If you don't have a whiteboard, writing your solution on paper can be a good substitute. Phone interview? Try using the online code pad they will have you use.
-2. Always compile your code after writing it. You'll often find bugs in your solution. Think—how might you catch this problem in the future?
-
-## What makes a good practice problem?
-
-1. Representative of many problems
-2. Has shown up (or could reasonably show up) in real interviews
-3. Takes *less than an hour*
-4. Not language-specific
-5. Two kinds of problems:
-    more involved complex ones (company challenges)—good for overall practice
-    more specific targeted problems—better for checking understanding
-6. Not breaking any confidentiality agreements
-
-*Interested in getting even more involved?* Feel free to submit problems and solutions as pull requests. Email brian@codingforinterviews.com to get more involved with the group and join our planning Trello board.
+=>	I tried to use recursive approach. When I was doing the interview, 
+	it had been too long since I wrote recursive one, and I wasn't sure at the beggining, but now absolutely I can do better.
