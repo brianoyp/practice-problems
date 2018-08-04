@@ -1,6 +1,8 @@
-I chose the following practice problems since they are recommaned.
+# Brian's Challenges
 
-I am sorry for a little delay. I had very busy schedule with many interviews and family businesses(daughter's baptism and family reunion.)
+I chose the following practice problems since they were recommanded.
+
+I am sorry for a little delay. It's been very busy with many interviews and family businesses(daughter's baptism and family reunion.)
 
 I tried mocha and chai for testing since you said you are using it. I really like them.
 
@@ -13,9 +15,9 @@ to run it:
 ``` npm test```
 
 
-1. [Array Rotation](array_rotate): take a given array and rotate it `n` slots *(10-20 minutes)*
+## 1. [Array Rotation](array_rotate): take a given array and rotate it `n` slots
 
-## Questions for further understanding (This is a part of the assesment I guess...)
+### Questions for further understanding (This is a part of the assesment I guess...)
 
 1. What is the time complexity of your solution? How about space?
 => O(n) time, and O(n) space.
@@ -24,7 +26,7 @@ to run it:
 => I can do it in-place algoritm, just shift all element to right, 
 	and the put the very last element to the very front, and repeat n%length times. However, this this is more precisely O(n * length) in time.
 
-*Challenge:* There is an O(n) time / O(1) extra space solution. 
+3. *Challenge:* There is an O(n) time / O(1) extra space solution. 
 =>	Honestly, I could not figure out how to do "O(n) time / O(1) extra space"
 	After some searching I realized that we can divide the array into sets that is consist of elements equally distanced, 
 	and move all elements in the same set one by one. first one to the temporary space, next to the previous position, 
@@ -37,7 +39,7 @@ to run it:
 	These days, time is much more important than the space, so I prefer my first algorithm. Plus it is a lot simpler.
 
 
-2. [Coin Change](coin_change): how many different ways can you make change given an amount and list of coins?
+## 2. [Coin Change](coin_change): how many different ways can you make change given an amount and list of coins?
 
 =>	I tried to use recursive approach. When I was doing the interview, 
 	it had been too long since I wrote recursive one, and I wasn't sure at the beggining, but now absolutely I can do better.
