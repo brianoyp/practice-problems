@@ -67,3 +67,6 @@ docs/_build/
 
 # vi swap files
 *.swp
+
+#ignore node_modules
+**/node_modules
