@@ -1,0 +1,15 @@
+{
+  "name": "array_rotate",
+  "version": "1.0.0",
+  "description": "This problem is to rotate a given array to the right by `n` steps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Yepyoung Oh",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
